@@ -61,13 +61,13 @@ public class _Function {
         return number + 1;
     }
 
-    static Function<Integer, Integer> incrementByFunction = number -> number + 1;
+    static java.util.function.Function<Integer, Integer> incrementByFunction = number -> number + 1;
 
-    static Function<Integer, Integer> multiplyByFunction = number -> number * 2;
+    static java.util.function.Function<Integer, Integer> multiplyByFunction = number -> number * 2;
 
     static BiFunction<Integer, Integer, Integer> incrementAndMultiplyBiFunction =
             (increment, multiply) -> (increment + 1) * multiply;
 
-    static Function<Integer, Double> decrementAndDivideByBiFunction =
+    static java.util.function.Function<Integer, Double> decrementAndDivideByBiFunction =
             number -> Double.valueOf((number - 1) / 2);
 }
